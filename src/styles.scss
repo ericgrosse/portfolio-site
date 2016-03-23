@@ -1,0 +1,155 @@
+/* Debug CSS */
+
+
+
+/* Universal Styles */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+a, a:hover, a:focus, a:active, a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* Visibility classes */
+
+.visible {
+	opacity: 1;
+}
+
+.block {
+	display: block;
+}
+
+.inline {
+	display: inline;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.flex {
+	display: flex;
+}
+
+.skew {
+	transform: skew(0deg, -10deg);
+}
+
+.skew-reverse {
+	transform: skew(0deg, 10deg);
+}
+
+/* Component Styles */
+
+$imgContainerHeight: 570px;
+$borderRadius: 500px;
+
+body {
+	background-color: black;
+	opacity: 0.9;
+	color: white;
+}
+
+.signature {
+	text-align: center;
+}
+
+.images-container {
+	
+	display: flex;
+	flex-wrap: wrap;
+
+	.image-container {
+		width: 50%;
+		padding: 10px;
+
+		.image {
+			height: $imgContainerHeight;
+			text-align: center;
+			position: relative;
+			transition: all 0.5s;
+			display: block;
+
+			p {
+				position: absolute;
+				font-size: 40px;
+				color: white;
+				width: 100%;
+				top: 50%;
+				transform: translateY(-50%);
+				opacity: 0;
+				transition: all 0.5s;
+				z-index: 1; /* appears over overlay in order to not be affected by opacity */
+			}
+
+			.overlay {
+				width: 100%;
+				height: 100%;
+				transition: all 0.5s;
+				opacity: 0;
+				background: black;
+			}
+		}
+
+		.image:hover {
+
+			border-radius: $borderRadius;
+
+			p {
+				opacity: 1;
+			}
+
+			.overlay {
+				border-radius: $borderRadius;
+				opacity: 0.3;
+			}
+		}
+
+		.image.img-1 {
+			background: url(images/avertourism.png);
+		}
+		.image.img-2 {
+			background: url(images/feandrarealestate.png);
+		}
+		.image.img-3 {
+			background: url(images/searchifyprofiles.png);
+		}
+		.image.img-4 {
+			background: url(images/senecavipbooking.png);
+		}
+
+	}
+
+}
+
+#experiment-container {
+	width: 50%;
+	height: $imgContainerHeight;
+	padding: 10px;
+	text-align: center;
+	position: relative;
+	top: 0px;
+	background: url(images/avertourism.png) no-repeat;	
+
+	#experiment {
+		background: red;
+		height: 100%;
+	}
+}
+
