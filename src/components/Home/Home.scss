@@ -36,8 +36,12 @@
       align-items: center;
 
       h2, p {
-        margin: 0 8px;
+        margin: 0 50px;
         color: white;
+      }
+
+      h2 {
+        margin-bottom: 8px;
       }
 
       &:hover {
