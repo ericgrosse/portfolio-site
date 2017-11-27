@@ -105,6 +105,78 @@ class Home extends Component {
             />
           </div>
         </section>
+
+        <section className="our-expertise">
+          <div className="grid-container">
+            <div className="subsection header">
+              <h3>My Expertise</h3>
+            </div>
+
+            <ImageCard
+              href='https://reactjs.org/'
+              header='React'
+              description=''
+              imagePath={require('images/react-logo-1000x1000.png')}
+            />
+
+            <ImageCard
+              href='https://webpack.js.org/'
+              header='Webpack'
+              description=''
+              imagePath={require('images/webpack-logo-800x925.png')}
+            />
+
+            <ImageCard
+              href='https://nodejs.org/en/'
+              header='Node.js'
+              description=''
+              imagePath={require('images/node-js-logo-1000x612.png')}
+            />
+
+            <ImageCard
+              href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3'
+              header='HTML5 + CSS3'
+              description=''
+              imagePath={require('images/html5+css3.png')}
+            />
+
+            <ImageCard
+              href='https://www.mysql.com/'
+              header='MySQL'
+              description=''
+              imagePath={require('images/mysql-logo-1024x530.png')}
+            />
+
+            <ImageCard
+              href='https://www.mongodb.com/'
+              header='MongoDB'
+              description=''
+              imagePath={require('images/mongodb-logo-375x375.png')}
+            />
+
+
+            <ImageCard
+              href='https://github.com/'
+              header='Github'
+              description=''
+              imagePath={require('images/github-icon-512x512-2.png')}
+            />
+
+            <ImageCard
+              href='https://circleci.com/'
+              header='CircleCI'
+              description=''
+              imagePath={require('images/circle-ci-logo-400x400.png')}
+            />
+
+            <ImageCard
+              href='http://www.photoshop.com/'
+              header='Photoshop'
+              description=''
+              imagePath={require('images/photoshop-logo-512x512.png')}
+            />
+          </div>
+        </section>
       </div>
     );
   }

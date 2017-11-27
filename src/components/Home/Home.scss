@@ -59,4 +59,47 @@
       align-items: center;
     }
   }
+
+  section.our-expertise {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 30px;
+      align-items: stretch;
+    }
+
+    .img-overlay {
+      background: rgba(0, 0, 0, 0.82);
+      opacity: 0;
+      transition: all 300ms ease-in-out;
+      display: grid;
+      align-items: center;
+
+      h2, p {
+        margin: 0 50px;
+        color: white;
+      }
+
+      h2 {
+        margin-bottom: 8px;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .subsection {
+      padding: 1em;
+    }
+
+    .subsection.header {
+      grid-column: 1 / span 3;
+    }
+
+    .subsection.image-container {
+      position: relative;
+      display: grid;
+      align-items: center;
+    }
+  }
 }
