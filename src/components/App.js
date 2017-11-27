@@ -5,6 +5,7 @@ import Routes from 'components/Routes'
 import windowDimensions from 'react-window-dimensions';
 import 'styles/app.scss'
 import 'animate.css/animate.min.css'
+import 'fonts/Pieta/Webfonts/MyFontsWebfontsKit.css'
 
 class App extends Component {
   render() {

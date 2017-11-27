@@ -13,7 +13,7 @@
   }
   
   section.my-work {
-    background: $black;
+    background: #111;
     padding-bottom: 120px;
 
     h3 {
@@ -61,10 +61,18 @@
   }
 
   section.our-expertise {
+    background: #A75448;
+    padding-bottom: 120px;
+
     .grid-container {
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 30px;
       align-items: stretch;
+    }
+
+    h3 {
+      color: white;
+      margin: 45px 0;
     }
 
     .img-overlay {

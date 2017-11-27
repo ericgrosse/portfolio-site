@@ -9,7 +9,7 @@
 
   .grid-container {
     padding: 0 1em;
-    grid-template-columns: 1fr 45% repeat(4, 1fr);
+    grid-template-columns: 1fr 40% repeat(4, 1fr);
     justify-content: end;
     align-items: start;
   }
@@ -60,7 +60,8 @@
   a {
     text-decoration: none;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
+    font-family: 'Pieta-Bold';
     letter-spacing: 0.7px;
     color: white; //inherit;
     padding: 25px 0;

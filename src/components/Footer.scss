@@ -2,7 +2,7 @@
     @import '~styles/variables';
 
     padding-top: 120px;
-    background: $white;
+    background: #44988E;
 
     .grid-container {
       grid-template-columns: 1fr;
@@ -16,6 +16,10 @@
       font-size: 30px;
     }
 
+    p {
+      color: $white;
+    }
+
     .copyright {
       margin-top: 100px;
       margin-bottom: 0;
@@ -26,11 +30,11 @@
     }
 
     a {
-      color: lighten($black, 10%);
+      color: $white; //lighten($black, 10%);
       transition: color 0.3s;
 
       &:hover {
-        color: $black;
+        color: lighten($black, 10%);
       }
     }
 
