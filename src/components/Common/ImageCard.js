@@ -16,7 +16,7 @@ export default class ImageCard extends Component {
               </div>
             </div>
             </a>
-          <img src={props.imagePath}/>
+          <img className={props.imageClass} src={props.imagePath}/>
         </div>
       </div>
     )

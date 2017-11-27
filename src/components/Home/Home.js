@@ -18,7 +18,7 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    //onScroll()
+    onScroll()
     
     /* Scroll to anchor text */
     var $html_body = $('html, body');
@@ -55,6 +55,7 @@ class Home extends Component {
               header='Web Dev Sanity'
               description='My personal programming blog, with an emphasis on making web development more accessible to new developers.'
               imagePath={require('images/web-dev-sanity.png')}
+              imageClass=''
             />
 
             <ImageCard
@@ -62,6 +63,7 @@ class Home extends Component {
               header='Ketogenic Cookbook'
               description='A sample website for making recipes that adhere to a ketogenic diet.'
               imagePath={require('images/ketogenic-cookbook-1.png')}
+              imageClass=''
             />
 
             <ImageCard
@@ -69,6 +71,7 @@ class Home extends Component {
               header='Github Sample API'
               description={'An Angular application that uses Github\'s APIs to conveniently search through Github repositories, as well as checking for contributors, languages, stargazers, subscribers, etc.'}
               imagePath={require('images/github-sample-api.png')}
+              imageClass=''
             />
 
             <ImageCard
@@ -76,6 +79,7 @@ class Home extends Component {
               header='Book In A Box'
               description='A site designed for potential authors who want professional help publishing their first book. Currently the homepage, About Us, Our Authors and Blog page are built.'
               imagePath={require('images/book-in-a-box.png')}
+              imageClass=''
             />
 
             <ImageCard
@@ -83,6 +87,7 @@ class Home extends Component {
               header='Toptal User Profile'
               description='A sample site for developers to upload their profile and resume in order to attract clients. Each square in the profile allows the user to add content.'
               imagePath={require('images/toptal-user-profile.png')}
+              imageClass=''
             />
 
             <ImageCard
@@ -90,6 +95,7 @@ class Home extends Component {
               header='Music Player Web App'
               description='A music player built with the HTML5 Audio API. Currently allows you to drag & drop MP3s and adjust the songs playback speed'
               imagePath={require('images/music-player-web-app.png')}
+              imageClass=''
             />
 
             <ImageCard
@@ -97,6 +103,7 @@ class Home extends Component {
               header='Feandra Real Estate'
               description='A sample site that displays real estate listings.'
               imagePath={require('images/feandra-real-estate.png')}
+              imageClass=''
             />
 
             <ImageCard
@@ -104,6 +111,7 @@ class Home extends Component {
               header='Aver Tourism'
               description='A sample tourism site featuring an image carousel, on-scroll image animations and styled using Bootstrap.'
               imagePath={require('images/aver-tourism.png')}
+              imageClass=''
             />
 
             <ImageCard
@@ -111,6 +119,7 @@ class Home extends Component {
               header='Searchify Profiles'
               description='An experimental site that uses a fixed background image with angled tiles to fit the content. The header also features a complex, customized CSS animation.'
               imagePath={require('images/searchify-profiles.png')}
+              imageClass=''
             />
           </div>
         </section>
@@ -126,6 +135,7 @@ class Home extends Component {
               header='React'
               description=''
               imagePath={require('images/react-logo-1000x1000.png')}
+              imageClass='grid-image effect-left'
             />
 
             <ImageCard
@@ -133,6 +143,7 @@ class Home extends Component {
               header='Webpack'
               description=''
               imagePath={require('images/webpack-logo-925x925.png')}
+              imageClass='grid-image effect-left'
             />
 
             <ImageCard
@@ -140,6 +151,7 @@ class Home extends Component {
               header='Node.js'
               description=''
               imagePath={require('images/node-js-logo-1000x1000.png')}
+              imageClass='grid-image effect-left'
             />
 
             <ImageCard
@@ -147,6 +159,7 @@ class Home extends Component {
               header='HTML5 + CSS3'
               description=''
               imagePath={require('images/html5+css3-900x900.png')}
+              imageClass='grid-image effect-right'
             />
 
             <ImageCard
@@ -154,6 +167,7 @@ class Home extends Component {
               header='MySQL'
               description=''
               imagePath={require('images/mysql-logo-1024x1024.png')}
+              imageClass='grid-image effect-right'
             />
 
             <ImageCard
@@ -161,6 +175,7 @@ class Home extends Component {
               header='MongoDB'
               description=''
               imagePath={require('images/mongodb-logo-375x375.png')}
+              imageClass='grid-image effect-right'
             />
 
 
@@ -169,6 +184,7 @@ class Home extends Component {
               header='Github'
               description=''
               imagePath={require('images/github-icon-512x512-2.png')}
+              imageClass='grid-image effect-left'
             />
 
             <ImageCard
@@ -176,6 +192,7 @@ class Home extends Component {
               header='CircleCI'
               description=''
               imagePath={require('images/circle-ci-logo-400x400.png')}
+              imageClass='grid-image effect-left'
             />
 
             <ImageCard
@@ -183,6 +200,7 @@ class Home extends Component {
               header='Photoshop'
               description=''
               imagePath={require('images/photoshop-logo-512x512.png')}
+              imageClass='grid-image effect-left'
             />
           </div>
         </section>
