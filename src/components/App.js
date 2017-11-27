@@ -8,6 +8,10 @@ import 'animate.css/animate.min.css'
 import 'fonts/Pieta/Webfonts/MyFontsWebfontsKit.css'
 
 class App extends Component {
+  componentDidMount() {
+
+  }
+
   render() {
     const {props} = this;
 

@@ -19,6 +19,15 @@ class Home extends Component {
 
   componentDidMount() {
     //onScroll()
+    
+    /* Scroll to anchor text */
+    var $html_body = $('html, body');
+
+    $("a[href^=\\#]").click(function(e) { 
+      e.preventDefault();
+      var dest = $(this).attr('href');
+      $html_body.animate({ scrollTop: $(dest).offset().top }, 'slow');
+    });
   }
 
   render() {
@@ -29,13 +38,13 @@ class Home extends Component {
     let desktop = props.width >= 768
 
     return (
-      <div className="Home">
+      <div id="one" className="Home">
         <Banner
           title=''
           imagePath={require('images/eric-1-cropped.jpg')}
         />
           
-        <section className="my-work">
+        <section id="two" className="my-work">
           <div className="grid-container">
             <div className="subsection header">
               <h3>My Work</h3>
@@ -106,7 +115,7 @@ class Home extends Component {
           </div>
         </section>
 
-        <section className="our-expertise">
+        <section id="three" className="our-expertise">
           <div className="grid-container">
             <div className="subsection header">
               <h3>My Expertise</h3>
@@ -175,6 +184,22 @@ class Home extends Component {
               description=''
               imagePath={require('images/photoshop-logo-512x512.png')}
             />
+          </div>
+        </section>
+
+        <section id="four" className="about">
+          <div className="grid-container">
+            <div className="subsection header">
+              <h3>About Me (TODO)</h3>
+            </div>
+          </div>
+        </section>
+
+        <section id="five" className="contact">
+          <div className="grid-container">
+            <div className="subsection header">
+              <h3>Contact (TODO)</h3>
+            </div>
           </div>
         </section>
       </div>

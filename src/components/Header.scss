@@ -96,7 +96,7 @@
     transform: translateX(-20px);
   }
 
-  a:hover::before, a:hover::after, a:focus::before, a:focus::after, /*a.active::before, a.active::after*/ {
+  a:hover::before, a:hover::after, /*a.active::before, a.active::after*/ {
     opacity: 1;
     transform: translateX(0px);
   }

@@ -48,32 +48,25 @@ class Header extends React.Component {
       <div className="Header">
         <div className="grid-container">
           <section className="logo">
-            <NavLink to='/' activeClassName="active">Eric Grosse</NavLink>
+            <a href="#one">Eric Grosse</a>
           </section>
 
           <section className="gutter"/>
 
           <section className="services">
-            <NavLink to='/services' activeClassName="active">Services</NavLink>
+            <a href="#two">Work</a>
           </section>
 
           <section className="portfolio">
-            <NavLink to='/portfolio' activeClassName="active">Portfolio</NavLink>
-
-            {/*<div className="subsection">
-              <NavLink to='/portfolio/naska'>Naska</NavLink>
-              <NavLink to='/portfolio/troy'>Troy</NavLink>
-              <NavLink to='/portfolio/will'>Wilbert</NavLink>
-              <NavLink to='/portfolio/caroline'>Caroline</NavLink>
-            </div>*/}
+            <a href="#three">Expertise</a>
           </section>
 
           <section className="about">
-            <NavLink to='/about' activeClassName="active">About</NavLink>
+            <a href="#four">About</a>
           </section>
 
           <section className="contact">
-            <NavLink to='/contact' activeClassName="active">Contact</NavLink>
+            <a href="#five">Contact</a>
           </section>
         </div>
       </div>
