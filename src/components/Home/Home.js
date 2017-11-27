@@ -32,7 +32,7 @@ class Home extends Component {
       <div className="Home">
         <Banner
           title=''
-          imagePath={require('images/eric-1-cropped.JPG')}
+          imagePath={require('images/eric-1-cropped.jpg')}
         />
           
         <section className="my-work">
