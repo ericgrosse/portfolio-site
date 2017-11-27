@@ -1,0 +1,58 @@
+.Home {
+  @import '~styles/variables';
+  //@import '~styles/header';
+
+  section {
+    //min-height: 700px;
+    background: $white;
+    color: $black;
+  }
+
+  .subsection {
+    //padding: 1em; // debating whether I should keep this
+  }
+  
+  section.my-work {
+    background: $black;
+    padding-bottom: 120px;
+
+    h3 {
+      color: $white;
+      margin-top: 45px;
+      margin-bottom: 45px;
+    }
+
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 24px;
+      align-items: stretch;
+    }
+
+    .img-overlay {
+      background: rgba(0, 0, 0, 0.82);
+      opacity: 0;
+      transition: all 300ms ease-in-out;
+      display: grid;
+      align-items: center;
+
+      h2, p {
+        margin: 0 8px;
+        color: white;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .subsection.header {
+      grid-column: 1 / span 2;
+    }
+
+    .subsection.image-container {
+      position: relative;
+      display: grid;
+      align-items: center;
+    }
+  }
+}
