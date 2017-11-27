@@ -123,28 +123,28 @@ class Home extends Component {
               href='https://webpack.js.org/'
               header='Webpack'
               description=''
-              imagePath={require('images/webpack-logo-800x925.png')}
+              imagePath={require('images/webpack-logo-925x925.png')}
             />
 
             <ImageCard
               href='https://nodejs.org/en/'
               header='Node.js'
               description=''
-              imagePath={require('images/node-js-logo-1000x612.png')}
+              imagePath={require('images/node-js-logo-1000x1000.png')}
             />
 
             <ImageCard
               href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3'
               header='HTML5 + CSS3'
               description=''
-              imagePath={require('images/html5+css3.png')}
+              imagePath={require('images/html5+css3-900x900.png')}
             />
 
             <ImageCard
               href='https://www.mysql.com/'
               header='MySQL'
               description=''
-              imagePath={require('images/mysql-logo-1024x530.png')}
+              imagePath={require('images/mysql-logo-1024x1024.png')}
             />
 
             <ImageCard
