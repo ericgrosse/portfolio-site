@@ -24,7 +24,7 @@ module.exports = {
         include: path.join(__dirname, 'src')
       },
       {test: /(\.css|\.scss)$/, loaders: ['style', 'css?sourceMap', 'sass?sourceMap']},
-      {test: /\.(jpe?g|png|gif|svg)$/i, loaders: ['file-loader']},
+      {test: /\.(jpe?g|JPG|png|gif|svg)$/i, loaders: ['file-loader']},
       {test: /\.mp4$/, loader: 'url?limit=10000&mimetype=video/mp4'}
     ],
   },
