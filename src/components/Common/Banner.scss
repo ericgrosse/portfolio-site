@@ -1,0 +1,26 @@
+.Banner {
+  @import '~styles/variables';
+
+  position: relative;
+  // background-image spefified by an inline style
+  background-size: cover;
+  background-color: rgba(0,0,0,0.4);
+  //background-position: 50% 50%;
+  //margin-bottom: 120px;
+
+  h3 {
+    color: $black;
+  }
+
+  .img-overlay {
+    background: black;
+    opacity: 0.25;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 950px;
+    justify-items: center;
+    //align-items: center;
+  }
+}
