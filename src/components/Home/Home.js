@@ -75,7 +75,7 @@ class Home extends Component {
             />
 
             <ImageCard
-              href='https://book-in-a-box.herokuapp.com/'
+              href='https://bookinabox.netlify.com'
               header='Book In A Box'
               description='A site designed for potential authors who want professional help publishing their first book. Currently the homepage, About Us, Our Authors and Blog page are built.'
               imagePath={require('images/book-in-a-box.png')}
@@ -83,15 +83,7 @@ class Home extends Component {
             />
 
             <ImageCard
-              href='https://toptal-user-profile.herokuapp.com/'
-              header='Toptal User Profile'
-              description='A sample site for developers to upload their profile and resume in order to attract clients. Each square in the profile allows the user to add content.'
-              imagePath={require('images/toptal-user-profile.png')}
-              imageClass=''
-            />
-
-            <ImageCard
-              href='https://music-player-web-app.herokuapp.com/'
+              href='https://music-player-web-app.netlify.com/'
               header='Music Player Web App'
               description='A music player built with the HTML5 Audio API. Currently allows you to drag & drop MP3s and adjust the songs playback speed'
               imagePath={require('images/music-player-web-app.png')}
@@ -111,14 +103,6 @@ class Home extends Component {
               header='Aver Tourism'
               description='A sample tourism site featuring an image carousel, on-scroll image animations and styled using Bootstrap.'
               imagePath={require('images/aver-tourism.png')}
-              imageClass=''
-            />
-
-            <ImageCard
-              href='http://www.searchifyprofiles.com/'
-              header='Searchify Profiles'
-              description='An experimental site that uses a fixed background image with angled tiles to fit the content. The header also features a complex, customized CSS animation.'
-              imagePath={require('images/searchify-profiles.png')}
               imageClass=''
             />
           </div>
