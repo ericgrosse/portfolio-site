@@ -56,14 +56,6 @@ class Home extends Component {
             />
 
             <ImageCard
-              href='https://bookinabox.netlify.com'
-              header='Book In A Box'
-              description='A site designed for potential authors who want professional help publishing their first book. Currently the homepage, About Us, Our Authors and Blog page are built.'
-              imagePath={require('images/book-in-a-box.png')}
-              imageClass=''
-            />
-
-            <ImageCard
               href='https://music-player-web-app.netlify.com/'
               header='Music Player Web App'
               description='A music player built with the HTML5 Audio API. Currently allows you to drag & drop MP3s and adjust the songs playback speed'
