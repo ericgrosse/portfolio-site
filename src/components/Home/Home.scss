@@ -24,8 +24,9 @@
 
     .grid-container {
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 24px;
+      grid-gap: 0px;
       align-items: stretch;
+      padding: 0 8px;
     }
 
     .img-overlay {
@@ -119,7 +120,7 @@
 
     .grid-container {
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 24px;
+      grid-gap: 0px;
       align-items: stretch;
     }
 
@@ -140,7 +141,7 @@
 
     .grid-container {
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 24px;
+      grid-gap: 0px;
       align-items: stretch;
     }
 
@@ -151,6 +152,16 @@
     h3 {
       margin: 45px 0;
       color: $white;
+    }
+  }
+
+  @media (max-width: 800px) {
+    section.my-work h3 {
+      font-size: 24px;
+    }
+
+    section.our-expertise h3 {
+      font-size: 24px;
     }
   }
 }

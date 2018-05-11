@@ -8,7 +8,7 @@
   /* background: $mask; */
 
   .grid-container {
-    padding: 0 1em;
+    padding: 0 16px;
     grid-template-columns: 1fr 40% repeat(4, 1fr);
     justify-content: end;
     align-items: start;

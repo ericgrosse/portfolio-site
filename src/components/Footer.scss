@@ -51,4 +51,10 @@
     .subsection-1 {
       margin-top: 60px;
     }
+
+    @media (max-width: 800px) {
+      .copyright {
+        font-size: 16px;
+      }
+    }
   }
