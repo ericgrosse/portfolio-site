@@ -3,6 +3,10 @@
   /* @import '~styles/header'; */
   margin-top: 2rem;
 
+  .social-media-icons {
+    padding-top: 32px;
+  }
+
   section {
     /* min-height: 700px; */
     background: $white;
@@ -149,24 +153,6 @@
       margin: 45px 0;
       color: $white;
     }
-  }
-
-  /* social media links */
-  .social-media-icons {
-    a {
-      color: #4f5b73; /* lighten($black, 10%); */
-      transition: color 0.3s;
-  
-      &:hover {
-        color: darken($black, 10%);
-      }
-    }
-  }
-
-  .fa {
-    font-size: 60px;
-    padding: 0 6px;
-    padding-top: 32px;
   }
 
   /* breakpoints */

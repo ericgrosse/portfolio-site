@@ -1,8 +1,12 @@
   .Footer {
     @import '~styles/variables';
 
-    padding-top: 120px;
-    background: #44988E;
+    background: white;
+    padding: 1.5rem 0;
+
+    .social-media-icons {
+      padding-top: 1rem;
+    }
 
     .grid-container {
       grid-template-columns: 1fr;
@@ -17,31 +21,15 @@
     }
 
     p {
-      color: $white;
+      color: #293347;
     }
 
     .copyright {
-      margin-top: 100px;
-      margin-bottom: 0;
+      margin: 0;
     }
 
-    .social-media-icons {
-      padding-bottom: 45px;
-    }
-
-    a {
-      color: $white; /* lighten($black, 10%); */
-      transition: color 0.3s;
-
-      &:hover {
-        color: lighten($black, 10%);
-      }
-    }
-
-    .fa {
-      font-size: 60px;
-      padding: 0 6px;
-      padding-top: 16px;
+    .fa-envelope {
+      transform: scale(0.9,1);
     }
 
     .subsection {

@@ -135,6 +135,22 @@ textarea {
 
 /* Specific styles */
 
+.social-media-icons {
+  a {
+    color: #293347; /* lighten($black, 10%); */
+    transition: color 0.3s;
+
+    &:hover {
+      color: lighten(#293347, 20%);
+    }
+  }
+
+  .fa {
+    font-size: 60px;
+    padding: 0 6px;
+  }
+}
+
 .grid-container {
   max-width: 1200px; /*  Apple uses 1350px */
   margin: 0 auto;
