@@ -1,11 +1,11 @@
 .Header {
   @import '~styles/variables';
 
-  position: absolute;
+  /*position: absolute;*/
   z-index: 1000;
   width: 100%;
 
-  /* background: $mask; */
+  background: #4f5b73;
 
   .grid-container {
     padding: 0 16px;

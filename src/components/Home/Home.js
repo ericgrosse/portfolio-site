@@ -27,8 +27,11 @@ class Home extends Component {
       <div className="Home">
         <section id="two" className="my-work">
           <div className="grid-container">
-            <div className="subsection header">
-              <h3>Eric Grossé</h3>
+            <img src={require('images/thumbnail-svg.jpg')}/>
+            <div>
+              <p>Hi, I'm Eric Grossé, a frontend web developer from Montreal, Canada. I've been working in web development for over 4 years, ranging from freelance work to employment from startups and large corporations.</p>
+              <p>I am passionate about coding because I love using my intellect to create value (such as a new social media platform) out of mere keystrokes.</p>
+              <p>If you are interested in my services, feel free to contact me here directly, or via social media.</p>
             </div>
 
             <ImageCard

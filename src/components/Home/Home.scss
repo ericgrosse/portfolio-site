@@ -1,6 +1,7 @@
 .Home {
   @import '~styles/variables';
   /* @import '~styles/header'; */
+  margin-top: 2rem;
 
   section {
     /* min-height: 700px; */
@@ -13,14 +14,8 @@
   }
   
   section.my-work {
-    background: #111;
+    background: white;
     padding-bottom: 120px;
-
-    h3 {
-      color: $white;
-      margin-top: 45px;
-      margin-bottom: 45px;
-    }
 
     .grid-container {
       grid-template-columns: repeat(2, 1fr);
@@ -52,6 +47,7 @@
 
     .subsection.header {
       grid-column: 1 / span 2;
+      padding-top: 48px;
     }
 
     .subsection.image-container {

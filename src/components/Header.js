@@ -48,7 +48,7 @@ class Header extends React.Component {
       <div className="Header">
         <div className="grid-container">
           <section className="logo">
-            <a href="#one">Eric Grosse</a>
+            <a href="#one">Eric Grossé</a>
           </section>
 
           <section className="gutter"/>
