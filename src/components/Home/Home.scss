@@ -12,7 +12,7 @@
   .subsection {
     /* padding: 1em; *//* debating whether I should keep this */
   }
-  
+
   section.my-work {
     background: white;
     padding-bottom: 120px;
@@ -20,7 +20,7 @@
     .grid-container {
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 0px;
-      align-items: stretch;
+      align-items: center;
       padding: 0 8px;
     }
 
@@ -151,6 +151,25 @@
     }
   }
 
+  /* social media links */
+  .social-media-icons {
+    a {
+      color: #4f5b73; /* lighten($black, 10%); */
+      transition: color 0.3s;
+  
+      &:hover {
+        color: darken($black, 10%);
+      }
+    }
+  }
+
+  .fa {
+    font-size: 60px;
+    padding: 0 6px;
+    padding-top: 32px;
+  }
+
+  /* breakpoints */
   @media (max-width: 800px) {
     section.my-work h3 {
       font-size: 24px;
