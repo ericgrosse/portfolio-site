@@ -22,7 +22,7 @@ class AboutMe extends Component {
           <div className="info">
             <p>Hi, I'm Eric Grossé, a frontend web developer from Montreal, Canada. I've been working in web development for over 4 years, ranging from freelance work to employment from startups and large corporations.</p>
             <p>I am passionate about coding because I love using my intellect to create value (such as a new social media platform) out of mere keystrokes.</p>
-            <p>If you are interested in my services, feel free to contact by <a href="mailto:ericgrosse1@gmail.com">email</a>, or via social media.</p>
+            <p>If you are interested in my services, feel free to contact me by <a href="mailto:ericgrosse1@gmail.com">email</a>, or via social media.</p>
 
             <div className="social-media-icons">
               <a href={'https://github.com/ericgrosse'}><i className="fa fa-github" aria-hidden="true"/></a>
