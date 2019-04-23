@@ -1,7 +1,9 @@
 .Footer {
-  padding-top: 7.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom:1.5rem;
   .grid-container {
+    padding-top: 3.5rem;
+    border-top: 1px solid #0000002b;
     grid-template-columns: 1fr;
   }
 }
