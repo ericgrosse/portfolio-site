@@ -1,7 +1,7 @@
 import $ from 'jquery'
 
 function onScroll() {
-  let $animatedIcons = $('.ImageCard'); // Add classnames here
+  let $animatedIcons = $('.ImageCard.animated'); // Add classnames here
   let $window = $(window);
   let lastScrollTop = 0;
 

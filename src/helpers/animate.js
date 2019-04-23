@@ -34,7 +34,11 @@ function animate() {
   /* Scroll to anchor text */
   let $html_body = $('html, body');
 
-  $('a[href^=\\#]').click(function(e) { 
+  $('a[href^=\\#]').click(function(e) {
+   if ($(window).width() < 768) {
+     return;
+   }
+
     //e.preventDefault();
     let dest = $(this).attr('href');
     let scrollTop = dest === '#home' ? 0 : $(dest).offset().top;

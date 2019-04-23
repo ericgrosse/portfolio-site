@@ -8,7 +8,7 @@ class ImageCard extends Component {
 
     if (props.width < 768) {
       return (
-        <div className={'ImageCard ' + props.imageClass}>
+        <div className={'ImageCard'}>
           <a href={props.href} target="_blank">
             <img src={props.imagePath}/>
           </a>
@@ -17,7 +17,7 @@ class ImageCard extends Component {
     }
 
     return (
-      <div className={'ImageCard ' + props.imageClass}>
+      <div className={'ImageCard animated ' + props.imageClass}>
         <div className="subsection image-container">
           <a href={props.href} target="_blank">
             <div className="img-overlay">

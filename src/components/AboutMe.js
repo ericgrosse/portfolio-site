@@ -15,7 +15,7 @@ class AboutMe extends Component {
     const {state, props} = this
 
     return (
-      <div className="AboutMe">
+      <div className="AboutMe" id="home">
         <div className="grid-container">
           <img src={require('images/avatar.jpg')}/>
 
