@@ -19,6 +19,10 @@ h1 {
   line-height: 1.07;
   letter-spacing: -0.005em;
   margin-bottom: 5rem;
+
+  @media (max-width: 767px) {
+    font-size: 2rem;
+  }
 }
 
 h2 {
@@ -68,6 +72,10 @@ a:hover {
 
     &:hover {
       color: lighten(black, 40%);
+
+      @media (max-width: 767px) {
+        color: black;
+      }
     }
   }
 
