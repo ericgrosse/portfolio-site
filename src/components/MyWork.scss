@@ -1,5 +1,10 @@
 .MyWork {
+  padding-bottom: 16px;
   h1 {
     grid-column: 1 / span 2;
+      border-top: 1px solid #0000002b;
+      border-bottom: 1px solid #0000002b;
+      padding: 12px 0;
+      margin-bottom: 100px;
   }
 }

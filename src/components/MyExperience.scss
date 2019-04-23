@@ -7,5 +7,8 @@
 
   h1 {
     grid-column: 1 / span 3;
+    border-top: 1px solid #0000002b;
+    border-bottom: 1px solid #0000002b;
+    padding: 12px 0;
   }
 }
