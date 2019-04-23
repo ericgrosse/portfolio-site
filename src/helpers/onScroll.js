@@ -1,7 +1,7 @@
 import $ from 'jquery'
 
 function onScroll() {
-  let $animatedIcons = $('.grid-image'); // Add classnames here
+  let $animatedIcons = $('.image-container'); // Add classnames here
   let $window = $(window);
   let lastScrollTop = 0;
 
