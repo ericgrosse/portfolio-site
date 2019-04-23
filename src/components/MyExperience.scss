@@ -1,5 +1,5 @@
 .MyExperience {
-  padding-top: 3rem;
+  padding-top: 2rem;
   
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
@@ -10,6 +10,7 @@
     border-top: 1px solid #0000002b;
     border-bottom: 1px solid #0000002b;
     padding: 12px 0;
+    margin-bottom: 1.5rem;
   }
 
   @media (max-width: 767px) {
@@ -25,7 +26,7 @@
     }
 
     img {
-      padding: 1rem 0;
+      padding: 0;
       max-width: 60%;
     }
   }
