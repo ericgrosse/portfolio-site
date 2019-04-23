@@ -14,6 +14,7 @@ class MyExperience extends Component {
 
   render() {
     const {state, props} = this
+    const desktop = props.width >= 768
 
     return (
       <div className="MyExperience" id="experience">
@@ -24,7 +25,7 @@ class MyExperience extends Component {
             href='http://covera.ai/'
             header=''
             description={'Covera is a digital insurance brokerage designed to help users find the best and most cost effective insurance policies on a yearly basis.'}
-            imagePath={require('images/covera-2-cropped.jpg')}
+            imagePath={desktop ? require('images/covera-2-cropped.jpg') : require('images/covera-mobile.jpg')}
             imageClass='effect-left'
           />
 
@@ -32,7 +33,7 @@ class MyExperience extends Component {
             href='https://www.toptal.com/'
             header=''
             description={'Toptal is an agency that connects freelance software developers, designers and project managers to prospective clients.'}
-            imagePath={require('images/toptal-2-cropped.png')}
+            imagePath={desktop ? require('images/toptal-2-cropped.png') : require('images/toptal-mobile.png')}
             imageClass='effect-left'
           />
 
@@ -40,7 +41,7 @@ class MyExperience extends Component {
             href='https://www.reol.com/'
             header=''
             description='REOL Services is a consultancy that provices digital strategy and marketing solutions for the real estate industry.'
-            imagePath={require('images/reol-services-2-cropped.png')}
+            imagePath={desktop ? require('images/reol-services-2-cropped.png') : require('images/reol-services-mobile.png')}
             imageClass='effect-left'
           />
 
@@ -48,7 +49,7 @@ class MyExperience extends Component {
             href='https://www.nuance.com/index.html'
             header=''
             description='Nuance Communications is a multinational computer software company that specializes in voice recognition software.'
-            imagePath={require('images/nuance-2-cropped.jpg')}
+            imagePath={desktop ? require('images/nuance-2-cropped.jpg') : require('images/nuance-mobile.jpg')}
             imageClass=''
           />
 
@@ -56,7 +57,7 @@ class MyExperience extends Component {
             href='https://www.navori.com/'
             header=''
             description={'Navori Labs is a digital signage software company whose software is used in digital displays across over 100 countries.'}
-            imagePath={require('images/navori-labs-2-cropped.jpg')}
+            imagePath={desktop ? require('images/navori-labs-2-cropped.jpg') : require('images/navori-labs-mobile.jpg')}
             imageClass=''
           />
         </div>

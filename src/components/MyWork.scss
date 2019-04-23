@@ -9,8 +9,17 @@
   }
 
   @media (max-width: 767px) {
+    padding-bottom: 0;
+    .grid-container {
+      display:block;
+    }
+
     h1 {
       margin-bottom: 1.5rem;
+    }
+
+    img {
+      margin-bottom: 1em;
     }
   }
 }

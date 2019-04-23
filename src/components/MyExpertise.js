@@ -14,6 +14,7 @@ class MyExpertise extends Component {
 
   render() {
     const {state, props} = this
+    const desktop = props.width >= 768
 
     return (
       <div className="MyExpertise" id="expertise">
@@ -24,7 +25,7 @@ class MyExpertise extends Component {
               href='https://reactjs.org/'
               header='React'
               description=''
-              imagePath={require('images/react-logo-scaled.png')}
+              imagePath={desktop ? require('images/react-logo-scaled.png') : require('images/react-js-logo-cropped.png')}
               imageClass='effect-left'
             />
 
@@ -32,7 +33,7 @@ class MyExpertise extends Component {
               href='https://webpack.js.org/'
               header='Webpack'
               description=''
-              imagePath={require('images/webpack-logo-cropped.png')}
+              imagePath={desktop ? require('images/webpack-logo-cropped.png') : require('images/webpack-logo-mobile.png')}
               imageClass='effect-left'
             />
 
@@ -40,7 +41,7 @@ class MyExpertise extends Component {
               href='https://nodejs.org/en/'
               header='Node.js'
               description=''
-              imagePath={require('images/node-js-logo-cropped.png')}
+              imagePath={desktop ? require('images/node-js-logo-cropped.png') : require('images/node-js-logo-mobile.png')}
               imageClass='effect-left'
             />
 
@@ -48,7 +49,7 @@ class MyExpertise extends Component {
               href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3'
               header='HTML5 + CSS3'
               description=''
-              imagePath={require('images/html5+css3-900x900.png')}
+              imagePath={desktop ? require('images/html5+css3-900x900.png'): require('images/html5+css3-mobile.png')}
               imageClass=''
             />
 
@@ -56,7 +57,7 @@ class MyExpertise extends Component {
               href='https://circleci.com/'
               header='CircleCI'
               description=''
-              imagePath={require('images/circle-ci-logo-400x400.png')}
+              imagePath={desktop ? require('images/circle-ci-logo-400x400.png'): require('images/circle-ci-logo-mobile.png')}
               imageClass=''
             />
 
@@ -64,7 +65,7 @@ class MyExpertise extends Component {
               href='http://www.photoshop.com/'
               header='Photoshop'
               description=''
-              imagePath={require('images/photoshop-logo-cropped.png')}
+              imagePath={desktop ? require('images/photoshop-logo-cropped.png'): require('images/photoshop-logo-mobile.png')}
               imageClass=''
             />
         </div>

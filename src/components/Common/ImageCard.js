@@ -1,9 +1,16 @@
 import React, { Component } from 'react'
+import windowDimensions from 'react-window-dimensions'
 import 'components/Common/ImageCard.scss'
 
-export default class ImageCard extends Component {
+class ImageCard extends Component {
   render() {
     const {props} = this
+
+    if (props.width < 768) {
+      return (
+        <img src={props.imagePath}/>
+      )
+    }
 
     return (
       <div className={'ImageCard ' + props.imageClass}>
@@ -22,3 +29,5 @@ export default class ImageCard extends Component {
     )
   }
 }
+
+export default windowDimensions()(ImageCard)
