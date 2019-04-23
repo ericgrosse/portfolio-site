@@ -24,7 +24,7 @@ class MyExpertise extends Component {
               href='https://reactjs.org/'
               header='React'
               description=''
-              imagePath={require('images/react-logo-1000x1000.png')}
+              imagePath={require('images/react-logo-scaled.png')}
               imageClass='effect-left'
             />
 
@@ -32,7 +32,7 @@ class MyExpertise extends Component {
               href='https://webpack.js.org/'
               header='Webpack'
               description=''
-              imagePath={require('images/webpack-logo-925x925.png')}
+              imagePath={require('images/webpack-logo-cropped.png')}
               imageClass='effect-left'
             />
 
@@ -40,7 +40,7 @@ class MyExpertise extends Component {
               href='https://nodejs.org/en/'
               header='Node.js'
               description=''
-              imagePath={require('images/node-js-logo-1000x1000.png')}
+              imagePath={require('images/node-js-logo-cropped.png')}
               imageClass='effect-left'
             />
 
@@ -64,7 +64,7 @@ class MyExpertise extends Component {
               href='http://www.photoshop.com/'
               header='Photoshop'
               description=''
-              imagePath={require('images/photoshop-logo-512x512.png')}
+              imagePath={require('images/photoshop-logo-cropped.png')}
               imageClass=''
             />
         </div>
