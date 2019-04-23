@@ -16,14 +16,14 @@ function animate() {
 
     //if(windowTopPosition > 62) {
       if(windowTopPosition < lastScrollTop) {
-        $('.section-1 .header').removeClass('scroll-down').addClass('scroll-up');
+        $('.Header').removeClass('scroll-down').addClass('scroll-up');
       }
       else {
-        $('.section-1 .header').removeClass('scroll-up').addClass('scroll-down');
+        $('.Header').removeClass('scroll-up').addClass('scroll-down');
       }     
     //}
     /*else {
-      $('.section-1 .header').removeClass('scoll-down').removeClass('scroll-up');
+      $('.Header').removeClass('scoll-down').removeClass('scroll-up');
     }*/
 
     lastScrollTop = windowTopPosition;
@@ -35,8 +35,10 @@ function animate() {
   let $html_body = $('html, body');
 
   $('a[href^=\\#]').click(function(e) { 
-    e.preventDefault(); let dest = $(this).attr('href');
-    $html_body.animate({ scrollTop: $(dest).offset().top }, 'slow');
+    //e.preventDefault();
+    let dest = $(this).attr('href');
+    let scrollTop = dest === '#home' ? 0 : $(dest).offset().top;
+    $html_body.animate({ scrollTop: scrollTop }, 'slow');
   });
 }
 

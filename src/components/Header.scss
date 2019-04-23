@@ -1,6 +1,22 @@
 .Header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
   background: black;
   padding: 0 16px;
+
+  &.scroll-up, &.scroll-down {
+    transition: transform 500ms;
+  }
+
+  &.scroll-up {
+    transform: translate3D(0, 0, 0);
+  }
+
+  &.scroll-down {
+    transform: translate3D(0, -100%, 0);
+  }
 
   .grid-container {
     grid-template-columns: 1fr 45% repeat(3, 1fr);
