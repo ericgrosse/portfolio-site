@@ -16,10 +16,10 @@ function animate() {
 
     //if(windowTopPosition > 62) {
       if(windowTopPosition < lastScrollTop) {
-        $('.Header').removeClass('scroll-down').addClass('scroll-up');
+        $('.Header, .MobileHeader').removeClass('scroll-down').addClass('scroll-up');
       }
       else {
-        $('.Header').removeClass('scroll-up').addClass('scroll-down');
+        $('.Header, .MobileHeader').removeClass('scroll-up').addClass('scroll-down');
       }     
     //}
     /*else {

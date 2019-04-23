@@ -7,4 +7,10 @@
       padding: 12px 0;
       margin-bottom: 100px;
   }
+
+  @media (max-width: 767px) {
+    h1 {
+      margin-bottom: 1.5rem;
+    }
+  }
 }

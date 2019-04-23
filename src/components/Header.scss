@@ -60,13 +60,13 @@
   }
 
   /*  Custom breakpoint  */
-  @media (max-width: 1050px) {
+  @media (max-width: 1100px) {
     .grid-container {
       grid-template-columns: 1fr 35% repeat(3, 1fr);
     }
   }
 
-  @media (max-width: 890px) {
+  @media (max-width: 920px) {
     .grid-container {
       grid-template-columns: 1fr 20% repeat(3, 1fr);
     }
@@ -83,6 +83,23 @@
   min-height: 34px;
   align-items: center; /*  vertically centers the header text */
   overflow-y: hidden;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+  &.scroll-up, &.scroll-down {
+    transition: transform 500ms;
+  }
+
+  &.scroll-up {
+    transform: translate3D(0, 0, 0);
+  }
+
+  &.scroll-down {
+    transform: translate3D(0, -100%, 0);
+  }
 
   .header-content {
     display: grid;
