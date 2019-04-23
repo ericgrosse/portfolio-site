@@ -33,10 +33,10 @@ class Header extends Component {
           <i className="fa fa-bars" onClick={this.toggleHeader}/>
 
           <div className={'header-content' + (state.showHeader ? ' expanded': '')}>
-            <a>Home</a>
-            <a>Work</a>
-            <a>Experience</a>
-            <a>Expertise</a>
+            <a href="/">Home</a>
+            <a href="#work">Work</a>
+            <a href="#experience">Experience</a>
+            <a href="#expertise">Expertise</a>
           </div>
         </div>
       )
@@ -45,11 +45,11 @@ class Header extends Component {
     return (
       <div className="Header">
         <div className="grid-container">
-          <a className="home">Eric Grossé</a>
+          <a href="/" className="home">Eric Grossé</a>
           <div/>
-          <a>Work</a>
-          <a>Experience</a>
-          <a>Expertise</a>
+          <a href="#work">Work</a>
+          <a href="#experience">Experience</a>
+          <a href="#expertise">Expertise</a>
         </div>
       </div>
     )

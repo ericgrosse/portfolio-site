@@ -16,7 +16,7 @@ class MyWork extends Component {
     const {state, props} = this
 
     return (
-      <div className="MyWork">
+      <div className="MyWork" id="work">
         <div className="grid-container">
           <h1>My Work</h1>
           <ImageCard
@@ -24,7 +24,7 @@ class MyWork extends Component {
             header='Web Dev Sanity'
             description='My personal programming blog, with an emphasis on making web development more accessible to new developers.'
             imagePath={require('images/web-dev-sanity.png')}
-            imageClass=''
+            imageClass='effect-left'
           />
 
           <ImageCard
@@ -32,7 +32,7 @@ class MyWork extends Component {
             header='Ketogenic Cookbook'
             description='A sample website for making recipes that adhere to a ketogenic diet.'
             imagePath={require('images/ketogenic-cookbook-1.png')}
-            imageClass=''
+            imageClass='effect-left'
           />
 
           <ImageCard

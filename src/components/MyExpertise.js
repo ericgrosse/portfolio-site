@@ -16,7 +16,7 @@ class MyExpertise extends Component {
     const {state, props} = this
 
     return (
-      <div className="MyExpertise">
+      <div className="MyExpertise" id="expertise">
         <div className="grid-container">
           <h1>My Expertise</h1>
 
@@ -25,7 +25,7 @@ class MyExpertise extends Component {
               header='React'
               description=''
               imagePath={require('images/react-logo-1000x1000.png')}
-              imageClass='grid-image effect-left'
+              imageClass='effect-left'
             />
 
             <ImageCard
@@ -33,7 +33,7 @@ class MyExpertise extends Component {
               header='Webpack'
               description=''
               imagePath={require('images/webpack-logo-925x925.png')}
-              imageClass='grid-image effect-left'
+              imageClass='effect-left'
             />
 
             <ImageCard
@@ -41,7 +41,7 @@ class MyExpertise extends Component {
               header='Node.js'
               description=''
               imagePath={require('images/node-js-logo-1000x1000.png')}
-              imageClass='grid-image effect-left'
+              imageClass='effect-left'
             />
 
             <ImageCard
@@ -49,7 +49,7 @@ class MyExpertise extends Component {
               header='HTML5 + CSS3'
               description=''
               imagePath={require('images/html5+css3-900x900.png')}
-              imageClass='grid-image effect-right'
+              imageClass=''
             />
 
             <ImageCard
@@ -57,7 +57,7 @@ class MyExpertise extends Component {
               header='CircleCI'
               description=''
               imagePath={require('images/circle-ci-logo-400x400.png')}
-              imageClass='grid-image effect-left'
+              imageClass=''
             />
 
             <ImageCard
@@ -65,7 +65,7 @@ class MyExpertise extends Component {
               header='Photoshop'
               description=''
               imagePath={require('images/photoshop-logo-512x512.png')}
-              imageClass='grid-image effect-left'
+              imageClass=''
             />
         </div>
       </div>

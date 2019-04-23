@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
+import './app.scss';
 import Home from './Home';
 import * as serviceWorker from './serviceWorker';
 import 'fonts/Pieta/Webfonts/MyFontsWebfontsKit.css';

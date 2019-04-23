@@ -16,7 +16,7 @@ class MyExperience extends Component {
     const {state, props} = this
 
     return (
-      <div className="MyExperience">
+      <div className="MyExperience" id="experience">
         <div className="grid-container">
           <h1>Companies I've Worked For</h1>
 
@@ -25,7 +25,7 @@ class MyExperience extends Component {
             header='Covera'
             description={'Covera is a digital insurance brokerage designed to help users find the best and most cost effective insurance policies on a yearly basis.'}
             imagePath={require('images/covera-1.jpg')}
-            imageClass=''
+            imageClass='effect-left'
           />
 
           <ImageCard
@@ -33,7 +33,7 @@ class MyExperience extends Component {
             header='Toptal'
             description={'Toptal is an exclusive network that connects freelance software developers, designers and project managers to prospective clients.'}
             imagePath={require('images/toptal-1.png')}
-            imageClass=''
+            imageClass='effect-left'
           />
 
           <ImageCard
@@ -41,7 +41,7 @@ class MyExperience extends Component {
             header='REOL Services'
             description='REOL Services is a consultancy that provices digital strategy and marketing solutions for the real estate industry.'
             imagePath={require('images/reol-services-1.png')}
-            imageClass=''
+            imageClass='effect-left'
           />
 
           <ImageCard

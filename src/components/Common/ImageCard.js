@@ -6,7 +6,7 @@ export default class ImageCard extends Component {
     const {props} = this
 
     return (
-      <div className="ImageCard">
+      <div className={'ImageCard ' + props.imageClass}>
         <div className="subsection image-container">
           <a href={props.href} target="_blank">
             <div className="img-overlay">
@@ -16,7 +16,7 @@ export default class ImageCard extends Component {
               </div>
             </div>
             </a>
-          <img className={props.imageClass} src={props.imagePath}/>
+          <img src={props.imagePath}/>
         </div>
       </div>
     )

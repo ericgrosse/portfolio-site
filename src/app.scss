@@ -1,3 +1,5 @@
+$black: #272727;
+
 body {
   margin: 0;
   padding: 0;
@@ -16,7 +18,7 @@ h1 {
   font-weight: 600;
   line-height: 1.07;
   letter-spacing: -0.005em;
-  color: rgb(41,51,71);
+  margin-bottom: 45px;
 }
 
 h2 {
@@ -52,11 +54,11 @@ p {
 
 .social-media-icons {
   a {
-    color: #293347;
+    color: black;
     transition: color 0.3s;
 
     &:hover {
-      color: lighten(#293347, 20%);
+      color: lighten(black, 40%);
     }
   }
 

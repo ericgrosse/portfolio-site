@@ -1,5 +1,5 @@
 .Header {
-  background: #272727;
+  background: black;
   padding: 0 16px;
 
   .grid-container {
@@ -13,6 +13,7 @@
     letter-spacing: 0.7px;
     padding: 24px 0;
     text-align: center;
+    text-decoration: none;
 
     &:hover {
       cursor: pointer;

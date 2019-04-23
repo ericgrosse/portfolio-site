@@ -7,6 +7,8 @@ import MyExperience from 'components/MyExperience'
 import MyExpertise from 'components/MyExpertise'
 import Footer from 'components/Footer'
 import onScroll from 'helpers/onScroll';
+import animate from 'helpers/animate';
+import 'animate.css/animate.min.css'
 
 class Home extends Component {
   constructor(props) {
@@ -19,6 +21,7 @@ class Home extends Component {
 
   componentDidMount() {
     onScroll()
+    animate()
   }
 
   render() {
