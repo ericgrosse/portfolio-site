@@ -8,7 +8,7 @@ export default class ImageCard extends Component {
     return (
       <div className="ImageCard">
         <div className="subsection image-container">
-          <a href={props.href}>
+          <a href={props.href} target="_blank">
             <div className="img-overlay">
               <div className="text-container">
                 <h2>{props.header}</h2>

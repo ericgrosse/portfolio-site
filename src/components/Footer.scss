@@ -1,48 +1,6 @@
-  .Footer {
-    @import '~styles/variables';
-
-    background: white;
-    padding: 1.5rem 0;
-
-    .social-media-icons {
-      padding-top: 1rem;
-    }
-
-    .grid-container {
-      grid-template-columns: 1fr;
-      align-items: center;
-    }
-
-    h3 {
-      width: 25%;
-      margin: 0 auto;
-      margin-top: 50px;
-      font-size: 30px;
-    }
-
-    p {
-      color: #293347;
-    }
-
-    .copyright {
-      margin: 0;
-    }
-
-    .fa-envelope {
-      transform: scale(0.9,1);
-    }
-
-    .subsection {
-      padding: 0;
-    }
-
-    .subsection-1 {
-      margin-top: 60px;
-    }
-
-    @media (max-width: 800px) {
-      .copyright {
-        font-size: 16px;
-      }
-    }
+.Footer {
+  padding: 1.5rem 0;
+  .grid-container {
+    grid-template-columns: 1fr;
   }
+}

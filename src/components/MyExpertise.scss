@@ -1,0 +1,9 @@
+.MyExpertise {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  h1 {
+    grid-column: 1 / span 3;
+  }
+}

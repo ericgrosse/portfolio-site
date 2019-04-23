@@ -1,80 +1,21 @@
 .Header {
-  @import '~styles/variables';
-
-  /*position: absolute;*/
-  z-index: 1000;
-  width: 100%;
-
   background: #272727;
+  padding: 0 16px;
 
   .grid-container {
-    padding: 0 16px;
-    grid-template-columns: 1fr 40% repeat(4, 1fr);
-    justify-content: end;
-    align-items: start;
+    grid-template-columns: 1fr 45% repeat(3, 1fr);
   }
-
-  section {
-    text-align: center;
-    background: transparent;
-  }
-
-  section.logo {
-    text-align: left;
-
-    a {
-      /*&::before, &::after {
-        content: none;
-      }*/
-    }
-  }
-
-  section.portfolio {
-    position: relative;
-
-    .subsection {
-      /* display: none; */
-      opacity: 0;
-      transition: opacity 0.2s;
-      position: absolute;
-      top: 56px;
-      left: 0;
-      /* background: rgba(64, 64, 64, 0.8); */
-
-      a {
-        padding: 14px 0;
-      }
-
-      &:hover {
-        opacity: 1;
-      }
-    }
-
-    a:hover + .subsection {
-      opacity: 1;
-    }
-  }
-
-  /* Link styling */
 
   a {
-    text-decoration: none;
-    font-size: 16px;
+    color: white;
     font-weight: 500;
     font-family: 'Pieta-Bold';
     letter-spacing: 0.7px;
-    color: white; /* inherit; */
-    padding: 25px 0;
-    transition: color 0.3s;
-
-    position: relative;
-    display: inline-block;
-    width: 100%;
+    padding: 24px 0;
+    text-align: center;
 
     &:hover {
-      color: white;
       cursor: pointer;
-      text-decoration: none;
     }
   }
 
@@ -96,36 +37,30 @@
     transform: translateX(-20px);
   }
 
-  a:hover::before, a:hover::after, /*a.active::before, a.active::after*/ {
+  a:hover::before, a:hover::after {
     opacity: 1;
     transform: translateX(0px);
   }
 
-  /*.portfolio > a:before, .portfolio > a:after {
-    content: none;
-  }*/
-
   /*  Custom breakpoint  */
-  @media (max-width: 1000px) {
+  @media (max-width: 1050px) {
     .grid-container {
-      grid-template-columns: 45% repeat(4, 1fr);
+      grid-template-columns: 1fr 35% repeat(3, 1fr);
     }
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 890px) {
     .grid-container {
-      grid-template-columns: 40% repeat(4, 1fr);
+      grid-template-columns: 1fr 20% repeat(3, 1fr);
     }
   }
 }
 
 .MobileHeader {
-  @import '~styles/variables';
-
   text-align: right;
   background: #272727;
   color: white;
-  font-family: helvetica;
+  font-family: 'helvetica';
   font-weight: bold;
   letter-spacing: 0.7px;
   min-height: 34px;
@@ -140,7 +75,7 @@
     transition: height 450ms ease-in-out;
 
     &.expanded {
-      height: 340px;
+      height: 270px;
       padding-bottom: 12px;
     }
   }
@@ -170,37 +105,4 @@
       text-decoration: none;
     }
   }
-
-  /*  Specific header items */
-
-  .home {
-    /* background: #7DB6B0; */
-  }
-
-  .services {
-
-  }
-  
-  .portfolio {
-    /* background: #E46350; */
-  }
-
-  .about {
-    /* background: #F5B07C; */
-  }
-
-  .contact {
-    /* background: #B05C5C; */
-  }
-
 }
-
-/*  Nice colors */
-/*
-#F5B07C
-#E46350
-#7DB6B0
-#B05C5C
-#74BF80
-#9F6490
-*/

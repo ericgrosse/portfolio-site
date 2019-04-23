@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-family: 'Trebuchet MS';
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.07;
+  letter-spacing: -0.005em;
+  color: rgb(41,51,71);
+}
+
+h2 {
+  font-family: europa, sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: rgba(10,10,10,0.9);
+}
+
+p {
+  font-size: 21px;
+  font-family: Helvetica;
+  font-weight: 400;
+  line-height: 1.38;
+  letter-spacing: 0.011em;
+  color: #293347;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+
+.grid-container {
+  max-width: 1200px; /* Apple uses 1350px */
+  margin: 0 auto;
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.social-media-icons {
+  a {
+    color: #293347;
+    transition: color 0.3s;
+
+    &:hover {
+      color: lighten(#293347, 20%);
+    }
+  }
+
+  .fa {
+    font-size: 60px;
+    padding: 0 6px;
+  }
+}
