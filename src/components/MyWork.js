@@ -42,6 +42,14 @@ class MyWork extends Component {
             imagePath={require('images/github-sample-api.png')}
             imageClass=''
           />
+
+          <ImageCard
+            href='https://vue-tic-tac-toe.netlify.com/'
+            header='Vue Tic-Tac-Toe'
+            description={'My first Vue.js application, a straightforward game of tic-tac-toe. My next Vue.js hobbyist projects will be checkers, then chess :)'}
+            imagePath={require('images/vue-tic-tac-toe-cropped.PNG')}
+            imageClass=''
+          />
         </div>
       </div>
     )

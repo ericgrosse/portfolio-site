@@ -39,6 +39,14 @@ p {
   margin-bottom: 1.2rem;
 }
 
+a {
+  transition: color 200ms;
+}
+
+a:hover {
+  color: #2196f3;
+}
+
 .grid-container {
   max-width: 1200px; /* Apple uses 1350px */
   margin: 0 auto;
