@@ -8,7 +8,7 @@ class ImageCard extends Component {
 
     if (props.width < 768) {
       return (
-        <div className="ImageCard">
+        <div className={'ImageCard ' + props.imageClass}>
           <a href={props.href} target="_blank">
             <img src={props.imagePath}/>
           </a>

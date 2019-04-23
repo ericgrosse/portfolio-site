@@ -13,7 +13,8 @@ class MyWork extends Component {
   }
 
   render() {
-    const {state, props} = this
+    const { props } = this
+    const desktop = props.width >= 768
 
     return (
       <div className="MyWork" id="work">
@@ -24,7 +25,7 @@ class MyWork extends Component {
             header='Web Dev Sanity'
             description='My personal programming blog, with an emphasis on making web development more accessible to new developers.'
             imagePath={require('images/web-dev-sanity.png')}
-            imageClass='effect-left'
+            imageClass={desktop ? 'effect-left' : 'effect-left'}
           />
 
           <ImageCard
@@ -32,7 +33,7 @@ class MyWork extends Component {
             header='Ketogenic Cookbook'
             description='A sample website for making recipes that adhere to a ketogenic diet.'
             imagePath={require('images/ketogenic-cookbook-1.png')}
-            imageClass='effect-left'
+            imageClass={desktop ? 'effect-left' : 'effect-right'}
           />
 
           <ImageCard
@@ -40,7 +41,7 @@ class MyWork extends Component {
             header='Github Sample API'
             description={'An Angular application that uses Github\'s APIs to conveniently search through Github repositories, as well as checking for contributors, languages, stargazers, subscribers, etc.'}
             imagePath={require('images/github-sample-api.png')}
-            imageClass=''
+            imageClass={desktop ? 'effect-right' : 'effect-left'}
           />
 
           <ImageCard
@@ -48,7 +49,7 @@ class MyWork extends Component {
             header='Vue Tic-Tac-Toe'
             description={'My first Vue.js application, a straightforward game of tic-tac-toe. My next Vue.js hobbyist projects will be checkers, then chess :)'}
             imagePath={require('images/vue-tic-tac-toe-cropped.PNG')}
-            imageClass=''
+            imageClass={desktop ? 'effect-right' : 'effect-right'}
           />
         </div>
       </div>

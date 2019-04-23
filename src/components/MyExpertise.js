@@ -26,7 +26,7 @@ class MyExpertise extends Component {
               header='React'
               description=''
               imagePath={desktop ? require('images/react-logo-scaled.png') : require('images/react-js-logo-cropped.png')}
-              imageClass='effect-left'
+              imageClass={desktop ? 'effect-left' : 'effect-right'}
             />
 
             <ImageCard
@@ -34,7 +34,7 @@ class MyExpertise extends Component {
               header='Webpack'
               description=''
               imagePath={desktop ? require('images/webpack-logo-cropped.png') : require('images/webpack-logo-mobile.png')}
-              imageClass='effect-left'
+              imageClass={desktop ? 'effect-left' : 'effect-right'}
             />
 
             <ImageCard
@@ -42,7 +42,7 @@ class MyExpertise extends Component {
               header='Node.js'
               description=''
               imagePath={desktop ? require('images/node-js-logo-cropped.png') : require('images/node-js-logo-mobile.png')}
-              imageClass='effect-left'
+              imageClass={desktop ? 'effect-left' : 'effect-right'}
             />
 
             <ImageCard
@@ -50,7 +50,7 @@ class MyExpertise extends Component {
               header='HTML5 + CSS3'
               description=''
               imagePath={desktop ? require('images/html5+css3-900x900.png'): require('images/html5+css3-mobile.png')}
-              imageClass=''
+              imageClass={desktop ? 'effect-right' : 'effect-right'}
             />
 
             <ImageCard
@@ -58,7 +58,7 @@ class MyExpertise extends Component {
               header='CircleCI'
               description=''
               imagePath={desktop ? require('images/circle-ci-logo-400x400.png'): require('images/circle-ci-logo-mobile.png')}
-              imageClass=''
+              imageClass={desktop ? 'effect-right' : 'effect-right'}
             />
 
             <ImageCard
@@ -66,7 +66,7 @@ class MyExpertise extends Component {
               header='Photoshop'
               description=''
               imagePath={desktop ? require('images/photoshop-logo-cropped.png'): require('images/photoshop-logo-mobile.png')}
-              imageClass=''
+              imageClass={desktop ? 'effect-right' : 'effect-right'}
             />
         </div>
       </div>

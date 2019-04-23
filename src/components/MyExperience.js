@@ -50,7 +50,7 @@ class MyExperience extends Component {
             header=''
             description='Nuance Communications is a multinational computer software company that specializes in voice recognition software.'
             imagePath={desktop ? require('images/nuance-2-cropped.jpg') : require('images/nuance-mobile.jpg')}
-            imageClass=''
+            imageClass={desktop ? 'effect-right' : 'effect-left'}
           />
 
           <ImageCard
@@ -58,7 +58,7 @@ class MyExperience extends Component {
             header=''
             description={'Navori Labs is a digital signage software company whose software is used in digital displays across over 100 countries.'}
             imagePath={desktop ? require('images/navori-labs-2-cropped.jpg') : require('images/navori-labs-mobile.jpg')}
-            imageClass=''
+            imageClass={desktop ? 'effect-right' : 'effect-left'}
           />
         </div>
       </div>
