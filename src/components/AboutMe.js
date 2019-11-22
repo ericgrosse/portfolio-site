@@ -27,7 +27,6 @@ class AboutMe extends Component {
             <div className="social-media-icons">
               <a href={'https://github.com/ericgrosse'}><i className="fa fa-github" aria-hidden="true"/></a>
               <a href={'https://www.linkedin.com/in/eric-grosse/'}><i className="fa fa-linkedin-square" aria-hidden="true"/></a>
-              <a href={'https://twitter.com/eric_grosse'}><i className="fa fa-twitter-square" aria-hidden="true"/></a>
             </div>
           </div>
         </div>
