@@ -1,0 +1,23 @@
+.AboutMe {
+  padding-top: 15.5rem;
+  padding-bottom: 9.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  .info {
+    padding: 1.5rem;
+  }
+
+  .grid-container {
+    align-items: center;
+    justify-items: center;
+    box-shadow:5px 5px 10px -5px rgba(0,0,0,0.75);
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 0;
+    padding-top: 6rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}

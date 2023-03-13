@@ -1,0 +1,33 @@
+.MyExperience {
+  padding-top: 2rem;
+  
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  h1 {
+    grid-column: 1 / span 3;
+    border-top: 1px solid #0000002b;
+    border-bottom: 1px solid #0000002b;
+    padding: 12px 0;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 0;
+
+    .grid-container {
+      display: block;
+    }
+
+    h1 {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    img {
+      padding: 0;
+      max-width: 60%;
+    }
+  }
+}
