@@ -1,10 +1,36 @@
-.Header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-  background: black;
-  padding: 0 16px;
+<div class="Header">
+  <div class="grid-container">
+    <a href="#home" class="home">Eric Grossé</a>
+    <div/>
+    <a href="#work">Work</a>
+    <a href="#experience">Experience</a>
+    <a href="#expertise">Expertise</a>
+  </div>
+</div>
+
+<!-- if (props.width < 768) {
+   return (
+     <div class="MobileHeader">
+       <i class="fa fa-bars" onClick={this.toggleHeader}/>
+
+       <div class={'header-content' + (state.showHeader ? ' expanded': '')}>/         <a onClick={this.toggleHeader} href="#home">Home</a>
+         <a onClick={this.toggleHeader} href="#work">Work</a>
+         <a onClick={this.toggleHeader} href="#experience">Experience</a>
+         <a onClick={this.toggleHeader} href="#expertise">Expertise</a>
+       </div>
+     </div>
+   )
+ } -->
+
+<style lang="scss">
+  .Header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background: black;
+    padding: 0 16px;
+  }
 
   &.scroll-up, &.scroll-down {
     transition: transform 500ms;
@@ -71,37 +97,37 @@
       grid-template-columns: 1fr 20% repeat(3, 1fr);
     }
   }
-}
 
-.MobileHeader {
-  text-align: right;
-  background: #272727;
-  color: white;
-  font-family: 'helvetica';
-  font-weight: bold;
-  letter-spacing: 0.7px;
-  min-height: 34px;
-  align-items: center; /*  vertically centers the header text */
-  overflow-y: hidden;
+  .MobileHeader {
+    text-align: right;
+    background: #272727;
+    color: white;
+    font-family: 'helvetica';
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    min-height: 34px;
+    align-items: center; /*  vertically centers the header text */
+    overflow-y: hidden;
 
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 
-  &.scroll-up, &.scroll-down {
-    transition: transform 500ms;
-  }
+    &.scroll-up, &.scroll-down {
+      transition: transform 500ms;
+    }
 
-  &.scroll-up {
-    transform: translate3D(0, 0, 0);
-  }
+    &.scroll-up {
+      transform: translate3D(0, 0, 0);
+    }
 
-  &.scroll-down {
-    transform: translate3D(0, -100%, 0);
-  }
+    &.scroll-down {
+      transform: translate3D(0, -100%, 0);
+    }
+  }  
 
-  .header-content {
+  .MobileHeader .header-content {
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
@@ -114,16 +140,16 @@
     }
   }
 
-  .fa {
+  .MobileHeader .fa {
     font-size: 30px;
     padding: 12px 24px;
   }
 
-  .home-button {
+  .MobileHeader .home-button {
     margin-top: 12px;
   }
 
-  a {
+  .MobileHeader a {
     text-decoration: none;
     color: inherit;
     padding: 24px;
@@ -139,4 +165,4 @@
       text-decoration: none;
     }
   }
-}
+</style>
