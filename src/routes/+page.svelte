@@ -1,5 +1,10 @@
+<script>
+  import MyTestComponent from '../components/_myTestComponent.svelte';
+</script> 
+ 
  <div class="Home">
   <h1>egportfolio</h1>
+  <MyTestComponent name="Eric" />
  </div>
 
 <!-- import React, { Component } from 'react';
