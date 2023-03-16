@@ -1,7 +1,8 @@
 <script>
   import Header from '../components/Header.svelte';
   import AboutMe from '../components/AboutMe.svelte';
-</script> 
+  // import 'fonts/Pieta/Webfonts/MyFontsWebfontsKit.css';
+</script>
  
  <div class="Home">
   <Header />
